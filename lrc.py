@@ -23,7 +23,8 @@ def fetch(id):
     #return result
 
 # test fetch
-res=fetch(418603077)
+id=input("请输入网易歌曲id:")
+res=fetch(id)
 import json
 res_dict = json.loads(res)
 list_res=res_dict["lyric"].split('\n')
